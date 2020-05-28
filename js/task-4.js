@@ -3,12 +3,8 @@
 import users from './users.js';
 
 const getInactiveUsers = users => {
-  const activeUsers = users.filter(function(user) {
-    return !user.isActive;
-  });
-  return activeUsers.map(function(user) {
-    return user.name;
-  });
+  const inactiveUsers = users.filter(user => !user.isActive);
+  return inactiveUsers;
 };
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]

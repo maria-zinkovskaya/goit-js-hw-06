@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 // eslint-disable-next-line import/extensions
 import users from './users.js';
 
